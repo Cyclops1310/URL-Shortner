@@ -32,6 +32,5 @@ class URL(Base):
 
     expires_at = Column(DateTime(timezone=True), nullable=True)
 
-    click_count = Column(Integer, default=0)
 
     user = relationship("User", backref="urls")
